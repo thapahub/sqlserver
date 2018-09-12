@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[MASTER_U](
+	[session] [nvarchar](255) NULL,
+	[createdDate] [datetime] NULL CONSTRAINT [DF_MASTER_U_createdDate]  DEFAULT (getdate())
+) ON [PRIMARY]
